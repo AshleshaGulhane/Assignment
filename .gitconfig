@@ -1,0 +1,7 @@
+[user]
+	name = Ashlesha
+	email = ashlesha.gulhane@proseraa.com
+[push]
+	default = simple
+[alias]
+	co = checkout

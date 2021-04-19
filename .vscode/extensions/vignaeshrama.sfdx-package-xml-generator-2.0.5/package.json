@@ -1,0 +1,57 @@
+{
+	"name": "sfdx-package-xml-generator",
+	"displayName": "Salesforce Package.xml Generator Extension for VS Code",
+	"description": "Extension for generating Package.xml on the Salesforce Platform",
+	"version": "2.0.5",
+	"publisher": "VignaeshRamA",
+	"repository": "https://github.com/vignaesh01/sfdx-package-generator",
+	"icon": "icon.png",
+	"keywords": [
+		"sfdx",
+		"salesforcedx",
+		"sfdx package xml",
+		"salesforce",
+		"salesforce package xml generator"
+	],
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"categories": [
+		"Extension Packs",
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:sfdxPackageGen.chooseMetadata"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sfdxPackageGen.chooseMetadata",
+				"title": "Choose Metadata Components",
+				"category": "SFDX Package.xml Generator"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -w -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"clipboardy": "^2.0.0",
+		"xml2js": "^0.4.19"
+	},
+	"devDependencies": {
+		"@types/node": "^10.5.2",
+		"tslint": "^5.11.0",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.29"
+	},
+	"__metadata": {
+		"id": "0633e4c5-1c73-4943-8d72-0f6c5457bd3b",
+		"publisherId": "62cf0b13-6899-4916-a0d0-796b4536eb62",
+		"publisherDisplayName": "Vignaesh Ram A"
+	}
+}

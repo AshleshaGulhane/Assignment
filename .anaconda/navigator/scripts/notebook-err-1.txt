@@ -1,0 +1,15 @@
+[I 18:46:26.822 NotebookApp] Writing notebook server cookie secret to C:\Users\Ashlesha\AppData\Roaming\jupyter\runtime\notebook_cookie_secret
+[I 18:46:28.609 NotebookApp] JupyterLab alpha preview extension loaded from C:\Users\Ashlesha\Anaconda3\lib\site-packages\jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 18:46:28.663 NotebookApp] Running the core application with no additional extensions or settings
+[I 18:46:28.828 NotebookApp] Serving notebooks from local directory: C:\Users\Ashlesha
+[I 18:46:28.828 NotebookApp] 0 active kernels 
+[I 18:46:28.828 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=4ddff1d97fcdc470d2cd497ea43d4a08ef2b5db11993a223
+[I 18:46:28.829 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:46:28.830 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=4ddff1d97fcdc470d2cd497ea43d4a08ef2b5db11993a223
+[I 18:46:30.492 NotebookApp] Accepting one-time-token-authenticated connection from ::1

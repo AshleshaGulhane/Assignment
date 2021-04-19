@@ -1,0 +1,224 @@
+{
+	"name": "salesforcedx-vscode-visualforce",
+	"displayName": "Visualforce",
+	"description": "Provides syntax highlighting for the Visualforce framework",
+	"qna": "https://github.com/forcedotcom/salesforcedx-vscode/issues",
+	"bugs": {
+		"url": "https://github.com/forcedotcom/salesforcedx-vscode/issues"
+	},
+	"repository": {
+		"url": "https://github.com/forcedotcom/salesforcedx-vscode"
+	},
+	"icon": "images/VSCodeVisualforce.png",
+	"galleryBanner": {
+		"color": "#ECECEC",
+		"theme": "light"
+	},
+	"version": "51.8.0",
+	"publisher": "salesforce",
+	"license": "BSD-3-Clause",
+	"engines": {
+		"vscode": "^1.49.3"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"dependencies": {
+		"@salesforce/salesforcedx-visualforce-language-server": "51.8.0",
+		"@salesforce/salesforcedx-visualforce-markup-language-server": "51.8.0",
+		"vscode-extension-telemetry": "0.0.17",
+		"vscode-languageclient": "5.2.1",
+		"vscode-languageserver-protocol": "3.14.1",
+		"vscode-languageserver-types": "3.14.0"
+	},
+	"devDependencies": {
+		"@salesforce/salesforcedx-test-utils-vscode": "51.8.0",
+		"@types/chai": "^4.0.0",
+		"@types/mocha": "^5",
+		"@types/node": "12.0.12",
+		"@types/sinon": "^2.3.2",
+		"@types/vscode": "1.49.0",
+		"chai": "^4.0.2",
+		"cross-env": "5.2.0",
+		"mocha": "^5",
+		"sinon": "^7.3.1",
+		"typescript": "3.8.3"
+	},
+	"extensionDependencies": [
+		"salesforce.salesforcedx-vscode-core"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm prune --production",
+		"vscode:package": "vsce package",
+		"vscode:sha256": "node ../../scripts/generate-sha256.js >> ../../SHA256",
+		"vscode:publish": "node ../../scripts/publish-vsix.js",
+		"compile": "tsc -p ./",
+		"lint": "tslint --project .",
+		"watch": "tsc -watch -p .",
+		"clean": "shx rm -rf node_modules && shx rm -rf out && shx rm -rf coverage && shx rm -rf .nyc_output",
+		"test": "npm run test:vscode-integration",
+		"test:vscode-integration": "node ../../scripts/run-vscode-integration-tests-with-top-level-extensions",
+		"test:vscode-insiders-integration": "cross-env CODE_VERSION=insiders npm run test:vscode-integration"
+	},
+	"activationEvents": [
+		"workspaceContains:sfdx-project.json"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "visualforce",
+				"aliases": [
+					"Visualforce",
+					"visualforce"
+				],
+				"extensions": [
+					".page",
+					".component"
+				],
+				"configuration": "./syntaxes/visualforce.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "visualforce",
+				"scopeName": "text.visualforce.markup",
+				"path": "./syntaxes/visualforce.json",
+				"embeddedLanguages": {
+					"source.css": "css",
+					"source.js": "javascript"
+				}
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "%configuration.title%",
+			"properties": {
+				"visualforce.format.enable": {
+					"type": "boolean",
+					"scope": "window",
+					"default": true,
+					"description": "%visualforce.format.enable.desc%"
+				},
+				"visualforce.format.wrapLineLength": {
+					"type": "integer",
+					"scope": "resource",
+					"default": 120,
+					"description": "%visualforce.format.wrapLineLength.desc%"
+				},
+				"visualforce.format.unformatted": {
+					"type": [
+						"string",
+						"null"
+					],
+					"scope": "resource",
+					"default": "",
+					"description": "%visualforce.format.unformatted.desc%"
+				},
+				"visualforce.format.contentUnformatted": {
+					"type": [
+						"string",
+						"null"
+					],
+					"scope": "resource",
+					"default": "pre,code,textarea",
+					"description": "%visualforce.format.contentUnformatted.desc%"
+				},
+				"visualforce.format.indentInnerHtml": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": false,
+					"description": "%visualforce.format.indentInnervisualforce.desc%"
+				},
+				"visualforce.format.preserveNewLines": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": true,
+					"description": "%visualforce.format.preserveNewLines.desc%"
+				},
+				"visualforce.format.maxPreserveNewLines": {
+					"type": [
+						"number",
+						"null"
+					],
+					"scope": "resource",
+					"default": null,
+					"description": "%visualforce.format.maxPreserveNewLines.desc%"
+				},
+				"visualforce.format.endWithNewline": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": false,
+					"description": "%visualforce.format.endWithNewline.desc%"
+				},
+				"visualforce.format.extraLiners": {
+					"type": [
+						"string",
+						"null"
+					],
+					"scope": "resource",
+					"default": "head, body, /html",
+					"description": "%visualforce.format.extraLiners.desc%"
+				},
+				"visualforce.format.wrapAttributes": {
+					"type": "string",
+					"scope": "resource",
+					"default": "auto",
+					"enum": [
+						"auto",
+						"force",
+						"force-aligned",
+						"force-expand-multiline"
+					],
+					"enumDescriptions": [
+						"%visualforce.format.wrapAttributes.auto%",
+						"%visualforce.format.wrapAttributes.force%",
+						"%visualforce.format.wrapAttributes.forcealign%",
+						"%visualforce.format.wrapAttributes.forcemultiline%"
+					],
+					"description": "%visualforce.format.wrapAttributes.desc%"
+				},
+				"visualforce.suggest.html5": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": true,
+					"description": "%visualforce.suggest.html5.desc%"
+				},
+				"visualforce.validate.scripts": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": true,
+					"description": "%visualforce.validate.scripts%"
+				},
+				"visualforce.validate.styles": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": true,
+					"description": "%visualforce.validate.styles%"
+				},
+				"visualforce.autoClosingTags": {
+					"type": "boolean",
+					"scope": "resource",
+					"default": true,
+					"description": "%visualforce.autoClosingTags%"
+				},
+				"visualforce.trace.server": {
+					"type": "string",
+					"scope": "window",
+					"enum": [
+						"off",
+						"messages",
+						"verbose"
+					],
+					"default": "off",
+					"description": "%visualforce.trace.server.desc%"
+				}
+			}
+		}
+	},
+	"__metadata": {
+		"id": "5468b156-80fa-447d-9b40-d5993e0e2b7e",
+		"publisherId": "656b996d-3c70-47b4-937e-e77c013faeea",
+		"publisherDisplayName": "Salesforce"
+	}
+}

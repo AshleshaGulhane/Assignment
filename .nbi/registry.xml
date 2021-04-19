@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+  Copyright 1997-2010 Oracle and/or its affiliates. All rights reserved.
+
+  Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+  Other names may be trademarks of their respective owners.
+
+  The contents of this file are subject to the terms of either the GNU General Public
+  License Version 2 only ("GPL") or the Common Development and Distribution
+  License("CDDL") (collectively, the "License"). You may not use this file except in
+  compliance with the License. You can obtain a copy of the License at
+  http://www.netbeans.org/cddl-gplv2.html or nbbuild/licenses/CDDL-GPL-2-CP. See the
+  License for the specific language governing permissions and limitations under the
+  License.  When distributing the software, include this License Header Notice in
+  each file and include the License file at nbbuild/licenses/CDDL-GPL-2-CP.  Oracle
+  designates this particular file as subject to the "Classpath" exception as provided
+  by Oracle in the GPL Version 2 section of the License file that accompanied this code.
+  If applicable, add the following below the License Header, with the fields enclosed
+  by brackets [] replaced by your own identifying information:
+  "Portions Copyrighted [year] [name of copyright owner]"
+  
+  Contributor(s):
+  
+  The Original Software is NetBeans. The Initial Developer of the Original Software
+  is Sun Microsystems, Inc. Portions Copyright 1997-2007 Sun Microsystems, Inc. All
+  Rights Reserved.
+  
+  If you wish your version of this file to be governed by only the CDDL or only the
+  GPL Version 2, indicate your decision by adding "[Contributor] elects to include
+  this software in this distribution under the [CDDL or GPL Version 2] license." If
+  you do not indicate a single choice of license, a recipient has the option to
+  distribute your version of this file under either the CDDL, the GPL Version 2 or
+  to extend the choice of license to its licensees as provided above. However, if you
+  add GPL Version 2 code and therefore, elected the GPL Version 2 license, then the
+  option applies only if the new code is made subject to such option by the copyright
+  holder.
+--><registry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="registry.xsd">
+<components>
+        <group built="1475203420168" expand="true" offset="20000" uid="runtimes-group" visible="true">
+            <display-name>
+                <default>Runtimes</default>
+                <localized locale="zh_CN">\u8FD0\u884C\u65F6</localized>
+                <localized locale="ru">\u0421\u0440\u0435\u0434\u044B \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F</localized>
+                <localized locale="ja">\u30E9\u30F3\u30BF\u30A4\u30E0</localized>
+            </display-name>
+            <description>
+                <default>Contains runtimes to be installed</default>
+                <localized locale="zh_CN">\u5305\u542B\u8981\u5B89\u88C5\u7684\u8FD0\u884C\u65F6</localized>
+                <localized locale="ru">\u0421\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u0441\u0440\u0435\u0434\u044B \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0434\u043B\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438</localized>
+                <localized locale="ja">\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3055\u308C\u308B\u30E9\u30F3\u30BF\u30A4\u30E0\u3092\u542B\u307F\u307E\u3059</localized>
+                <localized locale="pt_BR">Cont\u00E9m runtimes a serem instalados.</localized>
+            </description>
+            <icon md5="6cf9612dafe941a3444f6cff57c3ccd4" size="742">
+                <default-uri>file:/C:/Users/Ashlesha/.nbi/tmp/icon.png.2</default-uri>
+                <alternate-uri>resource:data/runtimes-group/icon.png</alternate-uri>
+                <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/groups/runtimes-group/icon.png</alternate-uri>
+            </icon>
+            <components>
+                <product built="1475203432924" expand="false" features="" offset="10000" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="glassfish-mod" version="4.1.1.0.1" visible="true">
+                    <display-name>
+                        <default>GlassFish Server Open Source Edition 4.1.1</default>
+                    </display-name>
+                    <description>
+                        <default>GlassFish Server 4.1.1 provides a server for the development and deployment of Java Platform Enterprise Edition (Java EE) and dynamic, scalable HTML5 applications. Key features include Java EE 7 compatibility, modularity, and rapid iterative development.</default>
+                        <localized locale="zh_CN">GlassFish Server 4.1.1 \u63D0\u4F9B\u4E86\u4E00\u4E2A\u670D\u52A1\u5668, \u4EE5\u4FBF\u4E8E\u5F00\u53D1\u548C\u90E8\u7F72 Java Platform Enterprise Edition (Java EE) \u4E0E\u52A8\u6001, \u53EF\u6269\u5C55\u7684 HTML5 \u5E94\u7528\u7A0B\u5E8F\u3002\u4E3B\u8981\u529F\u80FD\u5305\u62EC Java EE 7 \u517C\u5BB9\u6027, \u6A21\u5757\u5316\u548C\u5FEB\u901F\u8FED\u4EE3\u5F00\u53D1\u3002</localized>
+                        <localized locale="ru">\u0421\u0435\u0440\u0432\u0435\u0440 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 GlassFish 4.1.1 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u0441\u0435\u0440\u0432\u0435\u0440 \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u0438 \u0440\u0430\u0437\u0432\u0435\u0440\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 Java Platform Enterprise Edition (Java EE) \u0438 \u0434\u0438\u043D\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u0443\u0435\u043C\u044B\u0445 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0439 HTML5. \u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043A\u0438 \u0432\u043A\u043B\u044E\u0447\u0430\u044E\u0442 \u0432 \u0441\u0435\u0431\u044F \u0441\u043E\u0432\u043C\u0435\u0441\u0442\u0438\u043C\u043E\u0441\u0442\u044C \u0441 Java EE 7, \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u0443\u044E \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0443 \u0438 \u0431\u044B\u0441\u0442\u0440\u043E\u0435 \u0438\u0442\u0435\u0440\u0430\u0446\u0438\u043E\u043D\u043D\u043E\u0435 \u0440\u0430\u0437\u0432\u0435\u0440\u0442\u044B\u0432\u0430\u043D\u0438\u0435.</localized>
+                        <localized locale="ja">GlassFish Server 4.1.1\u306F\u3001Java Platform Enterprise Edition (Java EE)\u304A\u3088\u3073\u52D5\u7684\u304B\u3064\u30B9\u30B1\u30FC\u30E9\u30D6\u30EB\u306AHTML5\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u958B\u767A\u304A\u3088\u3073\u30C7\u30D7\u30ED\u30A4\u3059\u308B\u305F\u3081\u306E\u30B5\u30FC\u30D0\u30FC\u3092\u63D0\u4F9B\u3057\u307E\u3059\u3002\u4E3B\u306A\u6A5F\u80FD\u306B\u306F\u3001Java EE 7\u306E\u4E92\u63DB\u6027\u3001\u30E2\u30B8\u30E5\u30FC\u30EB\u6027\u304A\u3088\u3073\u8FC5\u901F\u306A\u53CD\u5FA9\u958B\u767A\u304C\u3042\u308A\u307E\u3059\u3002</localized>
+                        <localized locale="pt_BR">O GlassFish Server 4.1.1 fornece um servidor para o desenvolvimento e implanta\u00E7\u00E3o das aplica\u00E7\u00F5es HTML5 din\u00E2micas, escal\u00E1veis da Plataforma Java Enterprise Edition (JavaEE). As principais funcionalidades incluem compatibilidade, modularidade e desenvolvimento iterativo r\u00E1pido com Java EE 7.</localized>
+                    </description>
+                    <icon md5="6744da2b8252554466934ae03a02b2b1" size="955">
+                        <default-uri>file:/C:/Users/Ashlesha/.nbi/tmp/icon.png.3</default-uri>
+                        <alternate-uri>resource:data/glassfish-mod/4.1.1.0.1/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                        <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/glassfish-mod/4.1.1.0.01.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                    </icon>
+                    <properties>
+                        <property name="jdk.location"/>
+                        <property name="installation.location">C:\Program Files\glassfish-4.1.1</property>
+                    </properties>
+                    <configuration-logic>
+                        <file md5="c980f74af9e1ea633782c3d43c3492b4" size="44762">
+                            <default-uri>file:/C:/Users/Ashlesha/.nbi/tmp/logic,1.jar.4</default-uri>
+                            <alternate-uri>resource:data/glassfish-mod/4.1.1.0.1/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                            <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/glassfish-mod/4.1.1.0.01.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                        </file>
+                    </configuration-logic>
+                    <installation-data>
+                        <file md5="068c2e420f8f4bdac5d8b013f8371b33" size="51911307">
+                            <default-uri>resource:data/glassfish-mod/4.1.1.0.1/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                            <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/glassfish-mod/4.1.1.0.01.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                        </file>
+                    </installation-data>
+                    <system-requirements>
+                        <disk-space>133574052</disk-space>
+                    </system-requirements>
+                    <dependencies>
+                        <install-after uid="nb-base"/>
+                    </dependencies>
+                </product>
+                <product built="1475203447010" expand="false" features="" offset="20000" platforms="windows linux solaris-sparc solaris-x86 macosx-ppc macosx-x86" status="installed" uid="tomcat" version="8.0.27.0.0" visible="true">
+                    <display-name>
+                        <default>Apache Tomcat 8.0.27</default>
+                    </display-name>
+                    <description>
+                        <default>Open source web container for Java Servlet and JSP specifications.</default>
+                        <localized locale="zh_CN">Java Servlet \u548C JSP \u89C4\u8303\u7684\u5F00\u6E90 Web \u5BB9\u5668\u3002</localized>
+                        <localized locale="ru">\u0412\u0435\u0431-\u043A\u043E\u043D\u0442\u0435\u0439\u043D\u0435\u0440 \u0441 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u043C \u043A\u043E\u0434\u043E\u043C \u0434\u043B\u044F \u0441\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0439 \u0441\u0435\u0440\u0432\u043B\u0435\u0442\u043E\u0432 Java \u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446 JSP.</localized>
+                        <localized locale="ja">Java\u30B5\u30FC\u30D6\u30EC\u30C3\u30C8\u3068JSP\u4ED5\u69D8\u7528\u306E\u30AA\u30FC\u30D7\u30F3\u30FB\u30BD\u30FC\u30B9\u306EWeb\u30B3\u30F3\u30C6\u30CA\u3002</localized>
+                        <localized locale="pt_BR">Container Web de c\u00F3digo-fonte aberto para especifica\u00E7\u00F5es do Java Servlet e do JSP.</localized>
+                    </description>
+                    <icon md5="0bc6755e4d9b7fd243b3a2d963351f84" size="381">
+                        <default-uri>file:/C:/Users/Ashlesha/.nbi/tmp/icon.png.4</default-uri>
+                        <alternate-uri>resource:data/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                        <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/icon.png</alternate-uri>
+                    </icon>
+                    <properties>
+                        <property name="installation.location">$N{install}/apache-tomcat-8.0.27</property>
+                        <property name="installation.location.windows">C:\Program Files\Apache Software Foundation\Apache Tomcat 8.0.27</property>
+                    </properties>
+                    <configuration-logic>
+                        <file md5="b3bd5fad4181664cab22a53be403aa5c" size="34485">
+                            <default-uri>file:/C:/Users/Ashlesha/.nbi/tmp/logic,1.jar.5</default-uri>
+                            <alternate-uri>resource:data/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                            <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/logic/logic,1.jar</alternate-uri>
+                        </file>
+                    </configuration-logic>
+                    <installation-data>
+                        <file md5="10b8a4727f86bce406001f5e1575c7d2" size="5294475">
+                            <default-uri>resource:data/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</default-uri>
+                            <alternate-uri>file:/home.local/ffjre/fs_root/workspace/NB-82/dist/installers/registry-temp/components/products/tomcat/8.0.27.0.0/windows%20linux%20solaris-sparc%20solaris-x86%20macosx-ppc%20macosx-x86/data/data,1.jar</alternate-uri>
+                        </file>
+                    </installation-data>
+                    <system-requirements>
+                        <disk-space>13663220</disk-space>
+                    </system-requirements>
+                </product>
+            </components>
+        </group>
+    </components>
+</registry>

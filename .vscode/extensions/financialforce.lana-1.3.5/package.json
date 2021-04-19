@@ -1,0 +1,67 @@
+{
+	"name": "lana",
+	"displayName": "Apex Log Analyzer",
+	"version": "1.3.5",
+	"description": "Analyzer for Salesforce debug logs",
+	"keywords": [
+		"salesforce",
+		"apex",
+		"apexlog",
+		"debuglog"
+	],
+	"scripts": {},
+	"main": "boot.js",
+	"icon": "logo.png",
+	"publisher": "FinancialForce",
+	"author": "",
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/financialforcedev/debug-log-analyzer.git"
+	},
+	"activationEvents": [
+		"onCommand:lana.loadLogFile",
+		"onCommand:lana.showLogFile"
+	],
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"dependencies": {},
+	"contributes": {
+		"commands": [
+			{
+				"command": "lana.loadLogFile",
+				"title": "Log: Load Apex Log For Analysis"
+			},
+			{
+				"command": "lana.showLogFile",
+				"title": "Log: Show Log Analysis"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "lana.showLogFile",
+					"when": "resourceExtname == '.log'"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "lana.showLogFile",
+					"when": "resourceExtname == '.log'"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "lana.showLogFile",
+					"when": "resourceExtname == '.log'"
+				}
+			]
+		}
+	},
+	"__metadata": {
+		"id": "7c599a77-48cb-4248-b657-492714803364",
+		"publisherId": "9a17ba87-cdf0-4eef-8a86-ded0e06496be",
+		"publisherDisplayName": "FinancialForce"
+	}
+}

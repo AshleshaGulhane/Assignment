@@ -1,0 +1,24 @@
+[I 18:49:14.348 NotebookApp] The port 8888 is already in use, trying another port.
+[I 18:49:14.423 NotebookApp] JupyterLab alpha preview extension loaded from C:\Users\Ashlesha\Anaconda3\lib\site-packages\jupyterlab
+JupyterLab v0.27.0
+Known labextensions:
+[I 18:49:14.427 NotebookApp] Running the core application with no additional extensions or settings
+[I 18:49:14.542 NotebookApp] Serving notebooks from local directory: C:\Users\Ashlesha
+[I 18:49:14.542 NotebookApp] 0 active kernels 
+[I 18:49:14.542 NotebookApp] The Jupyter Notebook is running at: http://localhost:8889/?token=db904014755d42118a745b8ec10470fc182cc78b852d8789
+[I 18:49:14.543 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:49:14.544 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8889/?token=db904014755d42118a745b8ec10470fc182cc78b852d8789
+[I 18:49:14.627 NotebookApp] Accepting one-time-token-authenticated connection from ::1
+[I 19:15:44.019 NotebookApp] Creating new notebook in 
+[I 19:15:44.279 NotebookApp] Writing notebook-signing key to C:\Users\Ashlesha\AppData\Roaming\jupyter\notebook_secret
+[I 19:15:46.238 NotebookApp] Kernel started: d4418f2a-a56a-46ad-80ee-ba18902c7a95
+[I 19:15:48.545 NotebookApp] Adapting to protocol v5.1 for kernel d4418f2a-a56a-46ad-80ee-ba18902c7a95
+[I 19:16:43.659 NotebookApp] Saving file at /firstone.ipynb
+[I 19:16:51.949 NotebookApp] Kernel shutdown: d4418f2a-a56a-46ad-80ee-ba18902c7a95
+[I 19:17:05.875 NotebookApp] Kernel started: 0be16aff-856e-488d-af71-fe2a9e448041
+[I 19:17:08.098 NotebookApp] Adapting to protocol v5.1 for kernel 0be16aff-856e-488d-af71-fe2a9e448041
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
